@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*browser*/
+@media only screen and (min-width: 1021px) {
+	#mobile{
+		display:none;
+	}
+	#browser{
+		display:block;
+	}
+	body{
+		font-family: "Lucida Grande", Helvetica, sans-serif;
+		width:100%;
+		background: #FAFAFA;
+		margin:0;
+	}
+	a{text-decoration: none;}
+	a:link {color:#00131C;}      /* unvisited link */
+	a:visited {color:#00354C;}  /* visited link */
+	a:hover {color:#008DCC;}  /* mouse over link */
+	a:active {color:#85D5F6;}  /* selected link */
+	#head{
+		width:100%;
+		background: #00354C;
+		position:fixed;
+		float:left;
+		z-index: 99999999;
+		left:0px;
+		top:0px;
+	}
+	#head h1{
+		padding:0px;
+		margin:0px;
+		font-size: 250%;
+		color:white;
+		width:50%;
+		float:left;
+		text-align: left;
+		font-weight:100;
+		margin-left:5%;
+	}
+	#head h2{
+		padding:0px;
+		margin-top:1.5em;
+		margin-bottom:0px;
+		font-size:100%;
+		color:white;
+		width:10%;
+		float:left;
+		text-align: center;
+		font-weight:100;
+	}
+	#head a{
+		text-decoration: none;
+		color:white;
+	}
+
+	#mainWrapper{
+		width:60%;
+		margin-left:20%;
+		margin-right:20%;
+		max-width:1000px;
+		margin-top:3em;
+	}
+	header{
+		font-size:300%;
+		background:#00354C;
+		color:white;
+		text-align:center;
+	}
+	#home{
+		text-align: left;
+		left:0px;
+	}
+	/*@-webkit-keyframes test {
+		0% {
+			-webkit-filter: grayscale(0) blur(0px);
+		}
+		100% {
+			-webkit-filter: grayscale(0.7) blur(5px);
+		}
+	}*/
+	#home img{
+		max-width: 100%;
+		height: auto;
+		width: auto\9; /* ie8 */
+	}
+	#home img:hover{
+		-webkit-animation-name: test;/*properties: https://developer.tizen.org/documentation/articles/css3-animations-keyframes*/
+		 -webkit-animation-duration: 1s;/*duration*/
+		 -webkit-animation-iteration-count: 1;/*times repeated*/
+		 -webkit-animation-direction: normal;/*direction of animation:normal, reverse, alternate, alternate-reverse*/
+		 -webkit-animation-timing-function: linear;/*https://developer.tizen.org/documentation/articles/working-css3-transitions*/
+		 -webkit-animation-fill-mode: forwards;/*doesn't go back to original*/
+		 -webkit-animation-delay: 0s;/**/
+	}
+	#work{
+		margin-top:5em;
+		width:100%;
+	}
+	.workBox{
+		width:45%;
+		height:250px;
+		margin-left:3.33333%;
+		margin-bottom:30px;
+		background:green;
+		float:left;
+	}
+	.workBox img{
+		width:100%;
+
+	}
+	#about{
+		margin-top:5em;
+		width:100%;
+		position:relative;
+		float:left;
+	}
+	#about img{
+		max-width:100%;
+	}
+	#contact{
+		margin-top:5em;
+		width:100%;
+	}
+	.box{
+		margin-top:5px;
+		width:80%;
+		margin-left: 10%;
+		background:#00354C;
+		color:white;
+		float:left;
+		text-align:center;
+		font-size:125%;
+		border:solid;
+		border-color:#00354C;
+		border-width:1px;
+	}
+	.box a{
+		text-decoration: none;
+		color:white;
+
+	}
+	.box:hover{
+		background:white;
+		color:#00354C;
+		border:solid;
+		border-color:#00354C;
+		border-width: 1px;
+	}
+	.bxslider p{
+	text-align: left;
+	}
+}
+

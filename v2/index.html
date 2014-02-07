@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<head>
+<!--
+
+No, this site is not WordPress but I can develop for WordPress. Go to CUIndependent.com to see a site I build off a WordPress theme. Or try CUNewsCorps.com.
+
+-->
+<meta name="description" content="Personal website of Robert R. Denton. Senior at CU-Boulder. Work at CU Independent.com. Visual storyteller via photo, code, data, etc. @robertrdenton">
+<meta name="keywords" content="Rob, Robert, Denton, news, journalist, code, photo, cu, boulder">
+<meta name="author" content="Rob Denton">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"><!-- Android friendly, among other things -->
+<meta charset="UTF-8">
+<title>Robert R. Denton</title>
+<link rel="stylesheet" media="only screen and (max-width: 1020px)" href="mobileStyles.css" />
+<link rel="stylesheet" media="only screen and (min-width: 1021px)" href="browserStyles.css" />
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/icon.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--[if lt IE 9]>
+<script>
+  var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+    "figure,footer,header,hgroup,mark,menu,meter,nav,output," +
+    "progress,section,time,video").split(',');
+  for (var i = 0; i < e.length; i++) {
+    document.createElement(e[i]);
+  }
+</script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<!--Google-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47161305-1', 'robertrdenton.com');
+  ga('send', 'pageview');
+
+</script>
+<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- fit vids -->
+	<script src="plugins/jquery.fitvids.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="jquery.bxslider.css" rel="stylesheet" />
+</head>
+<body>
+<!--
+
+If you're looking at this, you may be wondering why (and how) my standard and mobile sites are different in content. The reason is, the user experience on a desktop/laptop is very diferent than on a tablet or smart phone. Larger screens are more, let's say, official. You use them while working, checking email and maybe even gaming. Everything you do on a desktop or laptop has a very specific purpose.
+
+Mobile, on the other hand is much more social. (For the purposes of this I'm going to call tablet and mobile just mobile, although they have important differences also.) Mobile is used to communicate and is much more friendly. Most importantly, your tolerance for bullshit is much lower on mobile. So while my desktop site is used as a personal branding tool, my mobile site is no nonsense. I keep it brief and on point. I don't try and use big words to impress or shiny graphics. I just have Helvetica and a little about myself. You want the good information and you want it now. Because you could be texting your friend back on mobile but instead I want you looking at my site.
+
+This idea mirrors my efforts to keep the code for mobile extremely light and flexible, no matter the screen size or bandwith. My mobile site contains no heavy visuals and loads quickly while my desktop version is bandwith heavy with several images and scripts. That's because if you're on a desktop or laptop and looking at my website, chances are your have a pretty reliable connection and a screen large enough to appreciate the visuals. On mobile the gifs would load slowly and would have much less of an effect.
+
+So there you go, my rationale behind the differences between desktop and mobile. If you're reading this, I hope you see that I didn't just put some pretty graphics in to try and woo you. I'm thoughtful about everything I code, but I can make those pretty visuals when the story calls for it.
+
+Form == function
+
+-->
+<div id="browser">
+	<script>
+		$(document).ready(function(){
+		  $('.bxslider').bxSlider({
+			  video: true,
+			  captions:true,
+			  useCSS: false, //fix for video?
+			  adaptiveHeight: true,
+			});
+		  $("#thing-with-videos").fitVids();
+		});
+		$(".bxslider li").mouseenter(function () {
+		    $(this).find(".bx-caption").fadeIn();
+		})
+
+		$(".bxslider li").mouseleave(function () {
+		    $(this).find(".bx-caption").fadeOut();
+		});
+	</script>
+	<!-- scrolling -->
+	<script>
+	$(document).ready (function(){
+	    $('#top').click(function(e){
+	    	e.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: $("#home").offset().top-75
+	        }, 1000);
+	    });
+	    $('#one').click(function(e){
+	    	e.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: $("#home").offset().top-75
+	        }, 1000);
+	    });
+	    $('#two').click(function(e){
+	    	e.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: $("#work").offset().top-55
+	        }, 1000);
+	    });
+	    $('#three').click(function(e){
+	    	e.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: $("#contact").offset().top-55
+	        }, 1000);
+	 
+	    });
+	    $('#four').click(function(e){
+	    	e.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: $("#about").offset().top-55
+	        }, 1000);
+	    }); 
+	    $('#email').hover(
+		    function() {
+		        var $this = $(this); // caching $(this)
+		        $this.data('Email', $this.text());
+		        $this.text("robert.denton9@gmail.com");
+		    },
+		    function() {
+		        var $this = $(this); // caching $(this)
+		        $this.text($this.data('Email'));
+		    }
+		);
+		$('#twitter').hover(
+		    function() {
+		        var $this = $(this); // caching $(this)
+		        $this.data('Twitter', $this.text());
+		        $this.text("@robertrdenton");
+		    },
+		    function() {
+		        var $this = $(this); // caching $(this)
+		        $this.text($this.data('Twitter'));
+		    }
+		);
+	});
+	</script>
+	<div id="head">
+		<a href="#home"><div id="top"><h1>Robert R. Denton</h1></div></a>
+		<div id="one"><h2><a href="#home">Home</a></h2></div>
+		<div id="two"><h2><a href="#work">Work</a></h2></div>
+		<div id="three"><h2><a href="#contact">Contact</a></h2></div>
+		<div id="four"><h2 style="margin-right:5%"><a href="#about">About</a></h2></div>
+	</div>
+	<div id="mainWrapper">
+		<div id="home">
+			<ul class="bxslider" style="text-align:center"> 
+			  <li><img src="http://robertrdenton.files.wordpress.com/2012/03/portfolio07_denton_6-24-11.jpg" alt="Carmelita Jeter, 3, of Nike, in second place early in the senior women's 100m dash during the 2011 USA Outdoor Track and Field Championships."/><p>Carmelita Jeter, 3, of Nike, in second place just out of the blocks in the senior women's 100m dash during the 2011 USA Outdoor Track and Field Championships. Photo for <a href="http://www.clarkson-creative.com">Clarkson Creative</a>.</p></li>
+			  <li><iframe src="http://shfwire.com/sites/default/files/interactives/1educationFinanceForWeb/index.html" frameborder="0" height="600" scrolling="no" width="100%" title="<a href='http://shfwire.com/node/8059'>hello world</a>"></iframe><p>Public education funding by state interactive. <a href="http://shfwire.com/node/8059">Full story via Scripps Howard Foundation Wire.</a></p></li>
+			  <li><img src="images/WaterGun_Denton_01.jpg" title="Austin Peterson of Alexandria, Va., and 13 others marched with toy guns in support of the Second Amendment and Toys for Tots."alt="Austin Peterson of Alexandria, Va., and 13 others marched with toy guns in support of the Second Amendment and Toys for Tots."/><p>Austin Peterson of Alexandria, Va., and 13 others marched from Arlington Cemetary to the Washington Monument with toy guns in support of the Second Amendment and Toys for Tots before the July Fourth weekend. <a href="http://shfwire.com/node/7913">Full story via Scripps Howard Wire Foundation</a>.</p></li>
+			  <li><iframe width="800" height="450" src="http://www.youtube.com/embed/Bc7GU6gDTlA" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen wmode="opaque"></iframe><p><a href="http://www.cuindependent.com">CU Independent</a> promotional video produced by Robert R. Denton.</p></li>
+			  <li><img src="images/0701_LOC_RD20122624DemoDerbyLife030.jpg" alt="Ron Borth of Ault takes turn four during the championship race of the lawn mower competition June 24, 2012 at the Greeley Stampede. Borth took the title for the second year in a row."/><p>Ron Borth of Ault takes turn four during the championship race of the lawn mower competition June 24, 2012 at the Greeley Stampede. Borth took the title for the second year in a row. <a href="http://issuu.com/greeleypublishingcompany/docs/tribunejuly1">Full story via The Greeley Tribune on page 23.</a></p></li>
+			  <li><iframe src="http://shfwire.com/sites/default/files/interactives/internInteractive/index.html" frameborder="0" scrolling="no" width="70%" height="700"></iframe><p>Colorado college students working in Washington D.C. for the summer. <a href="http://shfwire.com/node/7992">Full story via Scripps Howard Wire Foundation</a>.</p></li>
+			  <li><img src="images/420_12_Denton_04202012.jpg"alt="Senior philosophy major Jonathon Edwards is led to a police van after being arrested for going onto Norlin Quad with fellow CU students John Demopoulos and Gabriel Kuettel. 'I have a copy of the First Amendment in my pocket,'' said Edwards when asked if he had anything in his pockets."/><p>Senior philosophy major Jonathon Edwards is led to a police van on April 20, 2012 after being arrested for going onto Norlin Quad with fellow CU students John Demopoulos and Gabriel Kuettel. "I have a copy of the First Amendment in my pocket," said Edwards when asked if he had anything in his pockets. <a href="http://www.cuindependent.com/2012/04/20/photos-420-a-m-to-420-p-m/33903">Full story via CU Independent.com</a>.</p></li>
+			</ul>
+		</div>
+		<div id="work">
+			<header>Work</header>
+			<article>
+				<p> Over the past four years I have acted as a photojournalist, videographer, web developer, IT manager and editor-in-chief of the <a href="http://www.cuindependent.com">CU Independent</a>. Over that time I was proud to build a new website and brand for the CUI.</p>
+				<p>I have also had the privilege to do a number of fantastic internships. For two summers I worked with former National Geographic Director of Photography Rich Clarkson at <a href="http://www.clarkson-creative.com/">Clarkson Creative</a>. I started at the small multimedia firm straight out of high school and learned very quickly about the business of journalism and how photojournalists work. I spent one summer learning about community journalism at <a href="http://www.greeleytribune.com">The Greeley Tribune</a>, where I gained a great respect for deadlines. More recently, I was honored to be chosen as one of 15 college journalists from around the country to participate in the first ever PBS News Hour <a href="http://www.inaugblog.com">InaugBlog</a>. And last summer I spent 10 weeks in Washington D.C. with the <a href="http://www.shfwire.com">Scripps Howard Foundation Wire</a> producing national multimedia pieces. At Scripps I got my first taste of data journalism and learned the importance of good formatting.</p>
+				<p>In May I plan on graduating from the University of Colorado with a Bachelor of Science in journalism, a minor in Technology, Arts & Media, an advertising certificate and strong interest in business. I've taken computer science courses including one on iOS app development, business courses in marketing and entrepreneurialism and of course traditional journalism courses in ethics and legal principles.</p>
+				<p>After graduation I hope to join a forward-thinking newsroom where I can tell important stories. If you are looking for an eager journalist who is ready to hit the ground running, please get in touch with me via email or Twitter below. And please feel free to check out my <a href="images/Denton_Resume.pdf">resume</a>.</p>
+			</article>
+			<div id="contact">
+				<a href="images/Denton_Resume.pdf"><div class="box">Resume</div></a>
+				<a href="mailto:robert.denton9@gmail.com"><div class="box" id="email">Email</div></a>
+				<a href="http://www.twitter.com/robertrdenton"><div class="box" id="twitter">Twitter</div></a>
+			</div>
+		</div>
+		<div id="about">
+			<header>About</header>
+			<div onmouseover="document.getElementById('myimage1').src='images/alt2.jpg';"
+	onmouseout="document.getElementById('myimage1').src='images/main.jpg';" >
+	    		<img src="images/main.jpg" id="myimage1" alt="portrait of me" />
+	    	</div>
+			<article>
+				<p>I am a digital storyteller with a soft spot for print. That said, I would much rather produce content for the Web where space is limitless and you can use many more tools.</p>
+				<p>In my opinion, photos, video, data and web widgets have been vastly underutilized on the Net. This should not draw away from the importance of text; words are still the most efficient way to communicate complicated information. But, there are other methods to tell stories.</p>
+				<p>I am a firm believer in <a href="http://transmediajournalism.org/">transmedia journalism</a> and investigating new revenue models for our business.</p>
+			</article>
+		</div>
+	</div>
+</div>
+<div id="mobile">
+	<header>
+		<h1>Hello.</h1>
+		<p>My name is Rob.<br>This is my website.<br>Thanks for visiting.</p>
+		<!-- arrow down -->
+	</header>
+	<article>
+		<section>
+			<h1>About me</h1>
+			<p>I'm a <b>visual storyteller</b>. Because what is journalism if not storytelling?</p>
+			<p>I think that photos, video, data viz and web widgets have been vastly underutilized on the Net. I want to fix that. This is not to draw away from the importance of text, words are still the most efficient way to communicate complicated information. But, there are other methods to tell stories.</p>
+			<p>I'm a firm believer in transmedia journalism and investigating new revenue models for our business.</p>
+			<p>And I want to <b>disrupt</b>. Because change is good. It may not be comfortable, but if you embrace it, if you truly throw your weight into the winds of change, there's no telling what we can accomplish.</p>
+		</section>
+		<section>
+			<h1>My work</h1>
+			<p> Over the past four years I've acted as a photojournalist, videographer, web developer, IT manager and editor-in-chief of the <a href="http://www.cuindependent.com">CU Independent</a></p>
+			<p>I've also had the privilege to do a number of fantastic internships. For two summers I worked with former National Geographic Director of Photography Rich Clarkson at <a href="http://www.clarkson-creative.com/">Clarkson Creative</a>. I spent one summer learning about community journalism at <a href="http://www.greeleytribune.com">The Greeley Tribune</a>. More recently, I was honored to be chosen as a photographer for the PBS News Hour <a href="http://www.inaugblog.com">InaugBlog</a>. And last summer I spent 10 weeks in Washington D.C. with the <a href="http://www.shfwire.com">Scripps Howard Foundation Wire</a>. 
+			<p>In May I plan on graduating from the University of Colorado with a Bachelor of Science in journalism, Technology, Arts & Media minor, advertising certificate and strong interest in business.</p>
+			<p>If you're looking for a young and eager journalist who can code and is looking to learn, please let me know. I'm looking for a multiplatform newsroom that is willing to take a chance on a kid like me.</p>
+		</section>
+		<section>
+			<h1>Etc.</h1>
+			<p><a href="http://robertrdenton.com/images/Denton_Resume.pdf">resume</a></p>
+			<p><a href="mailto:robert.denton9@gmail.com">email [robert.denton9@gmail.com]</a></p>
+			<p><a href="http://www.twitter.com/robertrdenton">twitter [@robertrdenton]</a></p>
+		</section>
+	</article>
+</div>
+</body>

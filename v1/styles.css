@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	}
+h1 {
+ 	font-family: 'Raleway', sans-serif;
+ 	font-weight: 100;
+ 	text-align: left
+	}
+	 
+a {
+ 	font-family: 'Raleway', sans-serif;
+ 	font-weight: 600;
+ 	}
+	 	
+a:link {color:#FF3333;text-decoration:none;}      /* unvisited link */
+a:visited {color:#CC0000;text-decoration:none;}  /* visited link */
+a:hover {color:#FF0000;text-decoration:none;}  /* mouse over link */
+a:active {color:#FFFFFF;text-decoration:none;}  /* selected link */
+
+/*Little known fact: Charizard was my favorite Pokemon growing up.*/
+
+li {
+	list-style-type:none;
+	display: inline;
+	padding-right:1em;
+ 	text-align:right;
+
+	}
+
+p {
+	font-size:.9em;
+}
+
+#mainwrapper{}
+	
+#headwrapper {
+	position:fixed;
+	background: black;
+	color:white;		
+	opacity:.8;
+	width:100%;
+	left:0px;
+	top:-40px;
+	text-align:center;
+	z-index: 99999;
+	}
+	
+#section-links {
+	position: relative;
+	float:right;
+	}
+	
+#section1 {
+	width:100%;
+	height:1000px;
+}
+#section2 {
+	width:100%;
+	height:1000px;
+}
+#section3 {
+	width:100%;
+	height:1000px;
+}
+#section4 {
+	width:100%;
+	height:1000px;
+}
+
+.contentbox {
+	width: 90%;
+	height:100%;
+	margin: 0 auto;
+	/*background:red;*/		
+	}
+
+.title {
+	position: relative;
+	width:100%;
+	height:5%;
+	margin: 0 auto;
+	top: 15%;
+	text-align:center;
+	font-size: 2.5em;
+	/*background:green;*/	
+
+	}
+
+.info {
+	position: relative;
+	width:60%;
+	height:75%;
+	margin: 0 auto;
+	top: 15%;
+	/*background:pink;*/
+
+}
+
+.aboutbox {
+	position:relative;
+	float:left;
+	width:45%;
+	top:1%;
+	left:7%;
+	/*background:blue;	*/
+}
+
+.aboutpic {
+	position:relative;
+	float:left;
+	width:45%;
+	top:3%;
+	left:5%;
+	max-width:100%;
+	max-height:100%;
+	height:auto;
+/*	background:green;*/	
+}
+
+.workbox{
+	margin-left:1%;
+	margin-top:1%;
+	width:32%;
+	height:15em;
+	float:left;
+	/*background:yellow;*/
+}
+
+.workpic{
+	margin-bottom: .7em;
+	width: 100%;
+	height: 50%;
+	/*background:blue;*/
+	
+}
+
+.workpic img.wide {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+.workpic img.tall {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+}​
+
+.worktitle{
+	margin-top:1 em;
+	width:100%;
+	height:5%;
+	font-weight: 400;
+	font-size: 1em;
+	/*background:orange;*/
+}
+
+.worktext{
+	width:100%;
+	height: 36%;
+	font-size:1em;
+	color:black;
+	margin-bottom:.5em;
+	font-weight:300;
+	/*background:magenta;*/
+}
+		
+#sectionwrapper {
+	margin: 0 auto;
+	width: 100%;
+	text-align: left;
+	position:relative;
+	}
+	
+#mobilewrapper{
+	margin:0 auto;
+	display:none;
+	position:relative;
+	overflow:auto;
+}
+
+#mobilehead {
+	width: 100%;
+	font-size:2em;
+	text-align:center;
+	color:black;
+}
+
+#mobilewarn{
+	width: 100%;
+	font-size:1em;
+	text-align:center;
+	color:#FF6666;
+}
+
+#mobileabout{
+	width: 100%;
+	font-size:1em;
+	text-align:left;
+	color:black;
+}
+
+#mobilecontact {
+	width:100%
+	font-size:2em;
+	text-align:center;
+	}
+	
+@media (max-width: 1000px) {
+	#mainwrapper {
+		display:none;
+	}
+	#mobilewrapper {
+		display:block;
+	}
+}

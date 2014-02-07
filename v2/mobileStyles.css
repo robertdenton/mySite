@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*mobile*/
+
+@media only screen and (max-width: 1020px){
+	#browser{
+		display:none;
+	}
+	#mobile{
+		display:block;
+	}
+	body{
+		font-family: Helvetica, sans-serif;
+		width:100%;
+		background: #FAFAFA;
+	}
+	a{text-decoration: none;}
+	a:link {color:#00131C;}      /* unvisited link */
+	a:visited {color:#00354C;}  /* visited link */
+	a:hover {color:#008DCC;}  /* mouse over link */
+	a:active {color:#85D5F6;}  /* selected link */
+	header{
+		width:90%;
+		text-align: center;
+		font-size:200%;
+	}
+	header h1{
+		color: #00354C;
+		margin-bottom:0em;
+	}
+	article{
+		width:90%;
+		margin-left:5%;
+	}
+}
