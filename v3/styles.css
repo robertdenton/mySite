@@ -55,11 +55,13 @@ a:active {color:#67666A;}  /* selected link */
 	margin:0;
 	font-size:2em;
 	margin-bottom:10px;
+	padding-left: 10px;
+	padding-right:10px;
 }
 #top{
 	color:black;
 }
-@media screen and (max-width: 900px) { 
+@media screen and (max-width: 1159px) { 
 
 	/*
 		MOBILE
@@ -114,7 +116,7 @@ a:active {color:#67666A;}  /* selected link */
 		text-align: right;
 	}
 	#seg3 h1{
-		font-size: 5em;
+		font-size: 4.5em;
 		width:100%;
 		line-height: .9em;
 	}
@@ -181,9 +183,11 @@ a:active {color:#67666A;}  /* selected link */
 		font-size: 4em;
 		margin-top:10px;
 		margin-bottom: 10px;
+		padding-left:10px;
 	}
 	#seg7 h2{
 		margin-bottom:10px;
+		padding-left:10px;
 
 	}
 	/* bit from http://avexdesigns.com/responsive-youtube-embed/ */
@@ -212,6 +216,7 @@ a:active {color:#67666A;}  /* selected link */
 		margin-bottom: 0px;
 		margin-left:10%;
 		line-height: .9em;
+		margin-top:2em;
 	}
 	#seg8 h2{
 		margin:none;
@@ -223,28 +228,18 @@ a:active {color:#67666A;}  /* selected link */
 		background-color: red;
 		height:1200px;
 	}
-	#lessCon{
-		display:none;
+	#contact h1 {
+		font-size: 3em;
+	}
+	#contact .text {
+		font-size:1.5em;
 	}
 	#contact{
-		font-size: .5em;
-	}
-	#contactL{
-		width:50%;
-		text-align:right;
-		position:relative;
-		float:left;
-	}
-	#contactR{
-		width:49%;
-		margin-left:1%;
-		text-align:left;
-		position: relative;
-		float:right;
+		margin-bottom: 2em;
 	}
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
 
 	/*
 		Browser
@@ -410,20 +405,14 @@ a:active {color:#67666A;}  /* selected link */
 		background-color: red;
 		height:1200px;
 	}
-	#lessCon{
-		display:block;
+	#contact h1{
+		font-size: 4em;
+	}
+	#contact .text{
+		color:black;
+		font-size:2em;
 	}
 	#contact{
-		color:black;
-	}
-	#contact a:link {color:black;}      /* unvisited link */
-	#contact a:visited {color:#807F83;}  /* visited link */
-	#contact a:hover {color:#CBC9CF;}  /* mouse over link */
-	#contact a:active {color:#67666A;}  /* selected link */
-	#contactL{
-		display: none;
-	}
-	#contactR{
-		display: none;
+		margin-bottom: 2em;
 	}
 }
