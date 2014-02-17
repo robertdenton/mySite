@@ -62,7 +62,7 @@ a:active {color:#67666A;}  /* selected link */
 #top{
 	color:black;
 }
-@media screen and (max-width: 1159px) { 
+@media screen and (max-width: 1199px) { 
 
 	/*
 		MOBILE
@@ -87,6 +87,7 @@ a:active {color:#67666A;}  /* selected link */
 		margin-left:15%;
 		margin-bottom:200px;
 		text-align: left;
+		font-size: 1.5em;
 	}
 	#hs{
 
@@ -285,6 +286,7 @@ a:active {color:#67666A;}  /* selected link */
 		margin-left:15%;
 		margin-bottom:200px;
 		text-align: left;
+		font-size: 2em;
 	}
 	#hs{
 		height:800px;
@@ -460,4 +462,5 @@ a:active {color:#67666A;}  /* selected link */
 		margin-bottom: 2em;
 	}
 }
+
 
