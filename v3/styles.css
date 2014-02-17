@@ -57,6 +57,7 @@ a:active {color:#67666A;}  /* selected link */
 	margin-bottom:10px;
 	padding-left: 10px;
 	padding-right:10px;
+	font-weight: 200;
 }
 #top{
 	color:black;
@@ -416,3 +417,4 @@ a:active {color:#67666A;}  /* selected link */
 		margin-bottom: 2em;
 	}
 }
+
