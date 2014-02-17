@@ -88,6 +88,26 @@ a:active {color:#67666A;}  /* selected link */
 		margin-bottom:200px;
 		text-align: left;
 	}
+	#hs{
+
+	}
+	#hs h1{
+		text-align: left;
+		font-size: 4em;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		width:100%;
+		padding-left:5%;
+	}
+
+	#hs h2{
+		margin:none;
+		padding:none;
+		padding-left:5%;
+		text-align: left;
+		font-size: 2.5em;
+	}
+	
 	#seg2{
 	/*	height:798px;
 		background-image: url('media/seg22.png');*/
@@ -266,6 +286,29 @@ a:active {color:#67666A;}  /* selected link */
 		margin-bottom:200px;
 		text-align: left;
 	}
+	#hs{
+		height:800px;
+		background-image: url('media/hs.png');
+		color:white;
+		text-align: left;
+	}
+	#hs h1{
+		font-size: 5em;
+		margin-bottom: 0px;
+		width:100%;
+		text-align: center;
+	}
+	#hs h2{
+		margin:none;
+		padding:none;
+		text-align: left;
+		font-size: 1.5em;
+	}
+	#hs a{text-decoration: none}
+	#hs a:link {color:white;}      /* unvisited link */
+	#hs a:visited {color:#CBC9CF;}  /* visited link */
+	#hs a:hover {color:#807F83;}  /* mouse over link */
+	#hs a:active {color:#67666A;}  /* selected link */
 	#seg2{
 		height:798px;
 		background-image: url('media/seg22.png');
@@ -302,7 +345,7 @@ a:active {color:#67666A;}  /* selected link */
 	#seg3 h2{
 		margin:none;
 		padding:none;
-		padding-top: 475px;
+		padding-top: 500px;
 		font-size: 1.5em;
 	}
 	#seg4{
