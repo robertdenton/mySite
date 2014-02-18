@@ -75,7 +75,7 @@ a:active {color:#67666A;}  /* selected link */
 	#seg1{
 		height:600px;
 		top:0px;
-
+		text-align: center;
 	}
 	#seg1 h1{
 		padding-top:100px;
@@ -83,17 +83,18 @@ a:active {color:#67666A;}  /* selected link */
 		font-size: 6em;
 	}
 	#seg1list{
-		width:70%;
-		margin-left:15%;
+		width:80%;
+		margin-left:5%;
+		margin-right:5%;
 		margin-bottom:200px;
-		text-align: left;
 		font-size: 1.5em;
+		text-align: left;
 	}
 	#hs{
+		text-align: left;
 
 	}
 	#hs h1{
-		text-align: left;
 		font-size: 4em;
 		margin-top: 0px;
 		margin-bottom: 0px;
@@ -105,7 +106,6 @@ a:active {color:#67666A;}  /* selected link */
 		margin:none;
 		padding:none;
 		padding-left:5%;
-		text-align: left;
 		font-size: 2.5em;
 	}
 	
@@ -120,22 +120,19 @@ a:active {color:#67666A;}  /* selected link */
 		margin-top: 0px;
 		margin-bottom: 0px;
 		width:100%;
-		padding-left:5%;
 		line-height: .9em;
 	}
 	#seg2 h2{
 		margin:none;
 		padding:none;
-		padding-left:5%;
 		padding-top:30px;
-		text-align: left;
 		font-size: 2.5em;
 	}
 	#seg3{
 	/*	height:798px;
 		background-image: url('media/track.png');*/
 		color:black;
-		text-align: right;
+		text-align: left;
 	}
 	#seg3 h1{
 		font-size: 4.5em;
@@ -147,13 +144,12 @@ a:active {color:#67666A;}  /* selected link */
 		padding:none;
 		/*padding-top: 475px;*/
 		font-size: 2em;
-		text-align: left;
 	}
 	#seg4{
 	/*	height:800px;
 		background-image: url('media/kid.png');*/
 		color:black;
-		text-align: right;
+		text-align: left;
 	}
 	#seg4 h1{
 		font-size: 5em;
@@ -205,11 +201,9 @@ a:active {color:#67666A;}  /* selected link */
 		font-size: 4em;
 		margin-top:10px;
 		margin-bottom: 10px;
-		padding-left:10px;
 	}
 	#seg7 h2{
 		margin-bottom:10px;
-		padding-left:10px;
 
 	}
 	/* bit from http://avexdesigns.com/responsive-youtube-embed/ */
@@ -236,14 +230,12 @@ a:active {color:#67666A;}  /* selected link */
 	#seg8 h1{
 		font-size: 4em;
 		margin-bottom: 0px;
-		margin-left:10%;
 		line-height: .9em;
 		margin-top:2em;
 	}
 	#seg8 h2{
 		margin:none;
 		padding:none;
-		text-align: left;
 		font-size: 1.75em;
 	}
 	#resume{
