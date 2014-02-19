@@ -2,6 +2,6 @@ This is my evolution of personal websites, post my first Wordpress blog which is
 
 1 - The first site was Skrollr heavy and didn't have a mobile site.
 
-2 - The second site wasn't designed as well as I would have liked it but it's still active at <a href="http://www.robertrdenton.com">robertrdenton.com</a>.
+2 - The second site wasn't designed as well as I would have liked so I started from scratch..
 
-3 - The third site will hopefully be launched by early March and will be light and well designed.
+3 - The third site was launched 2/17/14 at <a href="http://www.robertrdenton.com">robertrdenton.com</a>. It's somewhat lighter (no jquery needed) and tells my story. I'm a visual storyteller after all so I'd better be able to tell my own story visually.
